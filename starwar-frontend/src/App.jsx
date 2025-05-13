@@ -36,10 +36,15 @@ function StarWarsApp() {
 
         <div className="flex justify-start mb-4">
           {searchQuery && (
-            <div className="text-center mb-4">
-              Search results for:{" "}
+            <div className="text-center mb-4 text-lg text-gray-900 dark:text-gray-100">
+              {characters?.length > 0 && (
+                <span className="font-semibold text-gray-900 dark:text-red-500">
+                  {characters?.length}{" "}
+                </span>
+              )}{" "}
+              Results for{" "}
               <span className="font-semibold text-gray-900 dark:text-red-500">
-                {searchQuery}{" "}
+                "{searchQuery}"{" "}
               </span>
             </div>
           )}
@@ -60,13 +65,17 @@ function StarWarsApp() {
         ) : (
           <>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
-              {characters.map((character) => (
-                <CharacterCard
-                  key={character.uid}
-                  character={character}
-                  onClick={setSelectedCharacterId}
-                />
-              ))}
+              {characters?.length > 0 ? (
+                characters?.map((character) => (
+                  <CharacterCard
+                    key={character.uid}
+                    character={character}
+                    onClick={setSelectedCharacterId}
+                  />
+                ))
+              ) : (
+                <div className="text-xl text-gray-500">No characters found</div>
+              )}
             </div>
 
             {totalPages > 1 && (
