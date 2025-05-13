@@ -149,7 +149,7 @@ The frontend application will start running on `http://localhost:5173`
   - API service function tests
   - State management tests
   - Event handling tests
-  - Remove console logs
+  - Remove unnecessary console logs to maintain a clean codebase.
 
 - **Backend Tests** (Using Jest)
   - API endpoint tests
