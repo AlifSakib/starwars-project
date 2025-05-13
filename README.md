@@ -2,6 +2,8 @@
 
 An application that allows users to explore Star Wars characters. Built with React (Vite) for the frontend and Node.js for the backend.
 
+## Note: The .env file was not added to the .gitignore file."
+
 ## Project Structure
 
 ```
@@ -147,6 +149,7 @@ The frontend application will start running on `http://localhost:5173`
   - API service function tests
   - State management tests
   - Event handling tests
+  - Remove console logs
 
 - **Backend Tests** (Using Jest)
   - API endpoint tests
@@ -237,7 +240,7 @@ The frontend application will start running on `http://localhost:5173`
 #### Search Implementation
 
 - Debounced search to prevent unnecessary API calls (300ms)
-- Clear feedback for search results
+- Clear search results
 
 #### Loading States
 

@@ -23,8 +23,6 @@ function StarWarsApp() {
     totalPages,
   } = useCharacters(searchQuery);
 
-  console.log("Characters:", characters);
-
   return (
     <div className="min-h-screen min-w-screen bg-gray-100 dark:bg-gray-900 py-8 px-4">
       <div className="max-w-6xl mx-auto">
