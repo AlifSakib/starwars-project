@@ -40,7 +40,7 @@ An application that allows users to explore Star Wars characters. Built with Rea
 
 ### Prerequisites
 
-- Node.js (v16 or higher)
+- Node.js (v16 or higher) - I am using v20.10.0 LTS
 - npm or yarn package manager
 
 ### Backend Setup
